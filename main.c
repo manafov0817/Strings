@@ -1,15 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 // D:\Programming\Mastering Data Structures & Algorithms using C and C++\Strings
-int main() {
+int main()
+{
 
     char x[] = "Mahammad";
     char x2[] = "Mahammad";
 
     // Finds string's length
     int sL = 0;
-    for( ; x[sL]!='\0'; sL++) {}
-    printf("String's Length is %d \n",sL);
+
+    for ( ; x[sL] != '\0'; sL++) {}
+
+    printf("String's Length is %d \n", sL);
 
 //
 //    // Changes case
@@ -58,8 +61,36 @@ int main() {
 //            break;
 //        }
 //    }
+//
+//    // printf("%d \n", isEqual);
+//
+//    // Finding Duplicates
+//
+//    int dupHash[26];
+//
+//    for (int i = 0; i < 26; i++)
+//    {
+//        dupHash[i] = 0;
+//    }
+//
+//    printf("-----------\n");
+//
+//    for (int i = 0; i < sL; i++)
+//    {
+//        dupHash[x[i] - 97] += 1;
+//        printf("%d \n", dupHash[x[i] - 97]);
+//    }
+//
+//    printf("-----------\n");
+//
+//    for (int i = 0; i < 26; i++)
+//    {
+//        if (dupHash[i] > 1)
+//        {
+//            printf("%c \n", i + 97);
+//        }
+//    }
 
-    printf("%d \n", isEqual);
 
     return 0;
 }
